@@ -1,0 +1,50 @@
+.checkout-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.checkout-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.btn-pay {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  margin-bottom: 15px;
+  background-color: #4CAF50; /* verde */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pay:hover {
+  background-color: #45a049;
+}
+
+.btn-cancel {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  background-color: #bbb;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #999;
+}
