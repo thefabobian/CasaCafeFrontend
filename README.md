@@ -1,54 +1,64 @@
-# React + TypeScript + Vite
+# 🛒 Casa Café Montería - Tienda Online (Frontend)
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Este proyecto consiste en una aplicación completa para una tienda virtual llamada **Casa Café Montería**.  
+El frontend está implementado con **React + Vite + TypeScript**, brindando una interfaz interactiva para que los usuarios puedan navegar productos, gestionar su carrito y realizar compras.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías Usadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React 18** con **Vite** (build rápido y moderno)
+- **TypeScript** para tipado estático
+- **Chakra UI** para componentes UI accesibles y responsivos
+- **Framer Motion** para animaciones suaves
+- **React Toastify** para notificaciones tipo toast
+- **React Router** para navegación SPA
+- **@mui/material** biblioteca de componentes UI modernos, personalizables y accesibles basados en Material Design.
+- **@emotion/react & @emotion/styled** librerías para estilos CSS-in-JS, que permiten crear estilos dinámicos y scoped en componentes React.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 Estructura del Frontend
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- `auth`: Módulo de autenticación, login y gestión de sesión.
+- `customer`: Registro y gestión del cliente.
+- `products`: Visualización y búsqueda de productos, interacción con carrito.
+- `itemCart`: Operaciones para agregar, actualizar y eliminar productos del carrito.
+- `checkout`: Proceso de pago con opciones de pago y generación de factura.
+- `utils`: Funciones auxiliares, helpers para JWT, etc.
+- `components`: Componentes UI reutilizables (botones, formularios, alertas, modales).
+- `routes`: Configuración de rutas y protección de accesos.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## ✅ Funcionalidades Principales
+
+- Interfaz responsiva y animada con React, Chakra UI y Framer Motion.
+- Notificaciones y alertas amigables con React Toastify.
+  
+---
+
+## 🚀 Cómo correr el proyecto
+
+1. Instala dependencias:
+   ```bash
+   npm install
+3. Ejecuta la app:
+   ```bash
+    npm run dev
+
+4. Abre en el navegador: http://localhost:5173 (o el puerto que indique Vite).
+
+---
+
+## 👤 Autor
+
+###  **Fabian Espinosa**
+
+🎓 **Estudiante de Ingeniería de Software & Ingeniería de Sistemas**  
+🏫 _Universidad de Cartagena_ | _Corporación Universitaria Remington_
+
+---
